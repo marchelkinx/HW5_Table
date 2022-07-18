@@ -47,6 +47,9 @@ public class TableTests {
         for (int j=0; j<=elements.size()-2;j++) {
             System.out.println(elements3.get(j).getText());
         }
+//        for (WebElement el : elements3) {
+//            System.out.println(el.getText());
+//        }
 
         List<WebElement> element4 = wd.findElements(By.xpath("//td[.='Philip Cramer']"));
         System.out.println("Number of row with name \"Philip Cramer\" = " + element4.size());
