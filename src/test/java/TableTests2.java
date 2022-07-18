@@ -38,7 +38,6 @@ public class TableTests2 {
 
         WebElement element5 = wd.findElement(By.cssSelector("a[href='/login']"));
         WebElement element5_2 = wd.findElement(By.xpath("//a[.='LOGIN']"));
-        WebElement element5_3 = wd.findElement(By.xpath("//*[@class='active']"));
 
         WebElement element6 = wd.findElement(By.cssSelector("[href^='/l']"));
         WebElement element6_2 = wd.findElement(By.xpath("//*[starts-with(@href,'/l')]"));

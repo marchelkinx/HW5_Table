@@ -51,9 +51,11 @@ public class TableTests {
 //            System.out.println(el.getText());
 //        }
 
-        List<WebElement> element4 = wd.findElements(By.xpath("//td[.='Philip Cramer']"));
-        System.out.println("Number of row with name \"Philip Cramer\" = " + element4.size());
-
+        List<WebElement> elements4 = wd.findElements(By.xpath("//table[@id='customers']//td[2]"));
+        for (WebElement el: elements4) {
+            if(el.getText().contains("Philip Cramer"))
+                System.out.println(elements4.indexOf(el)+2);
+        }
     }
 
     @AfterMethod
