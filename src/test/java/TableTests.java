@@ -44,7 +44,7 @@ public class TableTests {
 
         List<WebElement> elements3 = wd.findElements(By.xpath("//tbody/tr/td[3]"));
         System.out.println("\\/Content of last column\\/");
-        for (int j=0; j<=elements3.size();j++) {
+        for (int j=0; j<=elements3.size()-1;j++) {
             System.out.println(elements3.get(j).getText());
         }
 //        for (WebElement el : elements3) {
